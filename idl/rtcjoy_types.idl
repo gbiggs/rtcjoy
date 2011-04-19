@@ -1,0 +1,48 @@
+/* RTC:Joy
+ *
+ * Copyright (C) 2011
+ *     Geoffrey Biggs
+ *     RT-Synthesis Research Group
+ *     Intelligent Systems Research Institute,
+ *     National Institute of Advanced Industrial Science and Technology (AIST),
+ *     Japan
+ *     All rights reserved.
+ * Licensed under the Eclipse Public License -v 1.0 (EPL)
+ * http://www.opensource.org/licenses/eclipse-1.0.txt
+ *
+ * Component data types IDL.
+ */
+
+
+#ifndef RTCJOY_TYPES_IDL__
+#define RTCJOY_TYPES_IDL__
+
+#include "BasicDataType.idl"
+
+module RTCJoyTypes
+{
+
+    struct JSAxis
+    {
+        /// Time stamp.
+        RTC::Time tm;
+        /// Axis index.
+        unsigned short axis;
+        /// Axis position, between -1.0 and 1.0.
+        double value;
+    };
+
+    struct JSBtn
+    {
+        /// Time stamp.
+        RTC::Time tm;
+        /// Button index.
+        unsigned short button;
+        /// Button pressed or not.
+        boolean pressed;
+    };
+
+}; // module RTCJoy
+
+#endif // RTCJOY_TYPES_IDL__
+

@@ -1,0 +1,19 @@
+configuration.active_config: example
+
+conf.example.device: /dev/input/js0
+conf.example.x_axis: 0
+conf.example.y_axis: 1
+conf.example.scale_v: 1.0
+conf.example.scale_a: 1.0
+
+conf.__widget__.device: text
+conf.__widget__.x_axis: spin
+conf.__widget__.y_axis: spin
+conf.__widget__.scale_v: spin
+conf.__widget__.scale_a: spin
+
+conf.__constraints__.x_axis: 0<=x
+conf.__constraints__.y_axis: 0<=x
+conf.__constraints__.scale_v: 0<=x
+conf.__constraints__.scale_a: 0<=x
+
